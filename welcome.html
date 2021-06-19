@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <html lang="en" dir="ltr">
+        <meta charset="utf-8">
+        <style type="text/css">
+
+	      body
+	      {
+			border: 2px solid black;
+	   		padding: 2500;
+	   		margin: 0;
+	    	background: url("https://cutewallpaper.org/21/movie-background-hd/Lofoten-islands-Wallpaper-Hollywood-Movie-Poster-.jpg");
+	    	background-repeat: no-repeat;
+	    	background-size: 100%;	      }
+
+	      h1
+	      {
+	        font-size:50px;
+	        margin-top:0;
+	        font-family:Arial, sans-serif;
+	        text-shadow:2px 0 15px #292929;
+	        letter-spacing:6px;
+	        text-decoration:none;
+	        color:#AAA;
+	      }
+
+	      #banner
+	      {
+	        background-size: contain;
+	        text-align:center;
+	        background-repeat:no-repeat;
+	        border-radius:50px;
+	        padding: 150px;
+
+	      }
+
+	      .lead
+	      {
+	        background-color:rgba(200,255,255,0.7);
+	        border-radius:50px;
+	        font-family:Sintony, sans-serif;
+
+	      }
+
+        <title>Welcome</title>
+		</style>
+    </head>
+
+    <body>
+        {% extends "template.html" %}
+        {% block content %}
+        <h1 style="text-align:center;"><font color="green">Movie Recommender System</h1>
+
+	        <div id="banner">
+	        <form action="{{ url_for('rating') }}" method="GET">
+
+	     		<p class="lead"><font color="black"><strong>The user will rate several pre-defined movie categories based on his/her taste and then<br/> receive a recommendation list containing the movies that he/she will most probably like</strong></p>
+	     		<button type="submit" class="btn btn-success"><font color="black"><strong>Go></strong></button>
+	   		</form>
+	   		</div>
+	   		<div>
+	   			<br><br><br><br><br><font color="hotpink" face=verdana>Sarthak Gupta<br>
+	   			<font color="hotpink" face=verdana>Section : C<br>
+	   			<font color="hotpink" face=verdana>Class Roll No: 53<br>
+	   			<font color="hotpink" face=verdana>University Roll No: 2013488<br>
+	   			<font color="hotpink" face=verdana>Graphic Era University<br>
+
+	   		</div>
+
+        {% endblock %}
+	</body>
+</html>
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <head>
+        <html lang="en" dir="ltr">
+        <meta charset="utf-8">
+        <title>Recommendations</title>
+        <style type="text/css">    
+          body
+          {
+            border: 2px solid black;
+            padding: 0px;
+            } 
+        </style>  
+    </head>
+
+    <body bgcolor="Lavender">
+        {% extends "template.html" %}
+        {% block content %}
+            <h1><font color="midnightblue"><strong>Top 10 recommendations based on users interest</strong></font></h1>
+            <p>{{ table }}</p>
+        {% endblock %}
+    </body>
+</html>
